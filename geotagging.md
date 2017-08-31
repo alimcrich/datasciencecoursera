@@ -4,8 +4,7 @@ As the amount of data that is obtainable keeps growing, the necessity to be able
 
 Let's have a look at an example to answer these questions before I delve into the ins and outs of geotagging. 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Believe it or not, this is a shark on the freeway in Houston, Texas. <a href="https://twitter.com/hashtag/HurricaneHarvy?src=hash">#HurricaneHarvy</a> <a href="https://t.co/ANkEiEQ3Y6">pic.twitter.com/ANkEiEQ3Y6</a></p>&mdash; Jason Michael 🦈 (@Jeggit) <a href="https://twitter.com/Jeggit/status/902048241646280704">August 28, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Believe it or not, this is a shark on the freeway in Houston, Texas. <a href="https://twitter.com/hashtag/HurricaneHarvy?src=hash">#HurricaneHarvy</a> <a href="https://t.co/ANkEiEQ3Y6">pic.twitter.com/ANkEiEQ3Y6</a></p>&mdash; Jason Michael 🦈 (@Jeggit) <a href="https://twitter.com/Jeggit/status/902048241646280704">August 28, 2017</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 So if anyone didn't see this, someone based in Dublin tweeted a remarkably believable photo of a shark swimming on a freeway in Texas in the aftermath of Hurricane Harvey. Safe to say, anyone that actually noticed where @Jeggit was based, they could probably safely assume that this was fake news. This is where geotagging comes into play, could we use the fact that @Jeggit posted this tweet from somewhere so far away from where he was actually talking about an indicator of fake news? Personally, I think so and so do quite a few others:  LINK??
 
