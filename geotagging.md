@@ -4,8 +4,9 @@ As the amount of data that is obtainable keeps growing, the necessity to be able
 
 Let's have a look at an example to answer these questions before I delve into the ins and outs of geotagging. 
 
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8">
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Believe it or not, this is a shark on the freeway in Houston, Texas. <a href="https://twitter.com/hashtag/HurricaneHarvy?src=hash">#HurricaneHarvy</a> <a href="https://t.co/ANkEiEQ3Y6">pic.twitter.com/ANkEiEQ3Y6</a></p>&mdash; Jason Michael 🦈 (@Jeggit) <a href="https://twitter.com/Jeggit/status/902048241646280704">August 28, 2017</a></blockquote>
-
+</script>
 So if anyone didn't see this, someone based in Dublin tweeted a remarkably believable photo of a shark swimming on a freeway in Texas in the aftermath of Hurricane Harvey. Safe to say, anyone that actually noticed where @Jeggit was based, they could probably safely assume that this was fake news. This is where geotagging comes into play, could we use the fact that @Jeggit posted this tweet from somewhere so far away from where he was actually talking about an indicator of fake news? Personally, I think so and so do quite a few others:  LINK??
 
 So now with an understanding of why we want this information, you might be asking..how hard is it? For news articles and more structured text - not that difficult, there are geo-coding websites such as: https://mynasadata.larc.nasa.gov/latitudelongitude-finder/ where you can find the lat/longs of any address in the world. However, this is with the assumption that you have nice, clean data and as we all know, data is messy more often than not. Here's some examples of twitter locations that people decided to tag their tweets with:
@@ -22,7 +23,9 @@ I tackled both source geotagging and entity geotagging which finds the lat/longs
 
 *Splits the location by delimiters such as commas,full stops, hyphons.
 * Check each of the split locations and check if either is a country or state code and convert it to the corresponding country/state name.
-* Ask a geocoder for information about the location which you get back something like:
+* Checks if location is in native language and converts it to english. E.g. Espana -> English.
+* Geocode the location (output seen below) and use the osm_type to create a hierarchy from top level to low:
+Region -> Sub-Region -> Country -> State -> Zip Area -> Zip Code
 ```json
 {
    "properties": {
@@ -49,9 +52,10 @@ I tackled both source geotagging and entity geotagging which finds the lat/longs
    }
 }
 ```
+* Geocode lowest in hierarchy to obtain coordinates.
 
 
 [1] =  Paradesi, Sharon Myrtle. "Geotagging Tweets Using Their Content." FLAIRS conference. 2011.
 [2] =  Sultanik, Evan A., and Clayton Fink. "Rapid geotagging and disambiguation of social media text via an indexed gazetteer." Proceedings of ISCRAM 12 (2012): 1-10.
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
