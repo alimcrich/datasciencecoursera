@@ -48,12 +48,12 @@ There are a few solutions to Geotagging out there already such as [1][2] which e
 
 I tackled both source geotagging and entity geotagging which finds the lat/longs of where a document is published from and where the document is talking about respectively. These are two quite separate problems and so I will talk briefly about both. Source geotagging is ultimately the easier type as the main problem is with social media and 'correcting' tags such as the ones I mentioned earlier. To correct these locations, I used Algorithm 1:
 
-![alt text](https://github.com/alimcrich/datasciencecoursera\correctSocialFields.png "Correct Social Media Algorithm")
+![alt text](https://github.com/alimcrich/datasciencecoursera/blob/master/correctSocialFields.png "Correct Social Media Algorithm")
 
 To geotag the entities in the text, I collected all the entities using Named Entity Recognition (NER) and then followed Algorithm 2 and 3 in sucession:
 
-![alt text](https://github.com/alimcrich/datasciencecoursera\obtainAllLocations.png "Obtain All Locations Algorithm")
-![alt text](https://github.com/alimcrich/datasciencecoursera\disambiguateLocations.png "Disambiguate Locations Algorithm")
+![alt text](https://github.com/alimcrich/datasciencecoursera/blob/master/obtainAllLocations.png "Obtain All Locations Algorithm")
+![alt text](https://github.com/alimcrich/datasciencecoursera/blob/master/disambiguateLocations.png "Disambiguate Locations Algorithm")
 
 I found that these 3 algorithms achieved a 91.75% accuracy on a mixture of social media postings and news articles so I would say that's a success! As Newton said:
 >Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.
